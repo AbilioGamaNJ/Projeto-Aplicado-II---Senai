@@ -178,4 +178,12 @@ a.sidebar-link:hover {
 }
 
 
-@media (min-width: 768px) {}
+
+.container {
+    width: 80%;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    word-break: break-all;
+    /* max-height: auto; */
+    height: 90%;
+  }

@@ -178,4 +178,20 @@ a.sidebar-link:hover {
 }
 
 
-@media (min-width: 768px) {}
+                                                        /*A PARTIR DAQUI É DA MAIN*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  border-radius: 10px;
+  background: white;
+  word-break: break-all;
+  /* max-height: auto; */
+  height: 90%;
+}
