@@ -1,152 +1,206 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consultor de Treinamentos</title>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/perfil.css">
-</head>
-
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/perfil.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <aside id="sidebar">
-            <div class="d-flex">
-                <button class="toggle-btn" type="button">
-                    <i class="lni lni-grid-alt"></i>
-                </button>
-                <div class="sidebar-logo">
-                    <a href="#">L2EA</a>
+      <aside id="sidebar">
+        <div class="d-flex">
+          <button class="toggle-btn" type="button">
+            <i class="lni lni-grid-alt"></i>
+          </button>
+          <div class="sidebar-logo">
+            <a href="#">L2EA</a>
+          </div>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="./dadoscolaborador.html" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-person-vcard"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"
+                />
+                <path
+                  d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"
+                />
+              </svg>
+              <span>Dados dos Colaboradores</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="./aptos.html" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-person-check"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"
+                />
+                <path
+                  d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"
+                />
+              </svg>
+              <span>Colaboradores Aptos</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="./inaptos.html" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-person-dash"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1m0-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"
+                />
+                <path
+                  d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"
+                />
+              </svg>
+              <span>Colaboradores Inaptos</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="main">
+        <nav class="navbar navbar-expand px-4 py-3">
+          <form action="#" class="d-none d-sm-inline-block"></form>
+          <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                  <img
+                    src="./img/account-logo.png"
+                    class="avatar img-fluid"
+                    alt=""
+                  />
+                </a>
+                <div class="dropdown-menu dropdown-menu-end rounded">
+                  <div class="dropdow-item-container">
+                    <a href="#" class="dropdow-item">
+                      <i id="icon-elegant" class="lni lni-user"></i>
+                      <span>abiliogama@gmail.com</span>
+                    </a>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <div class="dropdow-item-container">
+                    <a href="#" class="dropdow-item">
+                      <svg
+                        id="icon-elegant"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-box-arrow-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+                        />
+                      </svg>
+                      <span>Sair</span>
+                    </a>
+                  </div>
                 </div>
-            </div>
-            <ul class="sidebar-nav">
-                <li class="sidebar-item">
-                    <a href="./dadoscolaborador.html" class="sidebar-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
-                            <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/>
-                            <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"/>
-                          </svg>
-                        <span>Dados dos Colaboradores</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="./aptos.html" class="sidebar-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16">
-                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
-                            <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
-                          </svg>
-                        <span>Colaboradores Aptos</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="./inaptos.html" class="sidebar-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-dash" viewBox="0 0 16 16">
-                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1m0-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
-                            <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
-                          </svg>
-                        <span>Colaboradores Inaptos</span>
-                    </a>
-                </li>
+              </li>
             </ul>
-        </aside>
-        <div class="main">
-          <nav class="navbar navbar-expand px-4 py-3">
-            <form action="#" class="d-none d-sm-inline-block">
-            </form>
-            <div class="navbar-collapse collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                            <img src="./img/account-logo.png" class="avatar img-fluid" alt="">
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end rounded">
-                            <a href="" class="dropdrown-item">
-                                <i class="lni lni-user"></i>
-                                <span>Emaildadasdasd</span>
-                            </a>
-                            <a href="" class="dropdrown-item">
-                                <i class="lni lni-shift-left"></i>
-                                <span>Sair</span>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+          </div>
         </nav>
         <div class="boxFullElements">
-                <div class="col-md-8 mt-1">
-                  <div class="card mb-3 content">
-                    <h1 class="m-3 pt-3">Dados do Colaborador</h1>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <h5>Matrícula</h5>
-                        </div>
-                        <div class="col-md-9 text-secondary">
-                          103029
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-md-3">
-                          <h5>Nome</h5>
-                        </div>
-                        <div class="col-md-9 text-secondary">
-                          Abílio Gama Neto Junior
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                          <div class="col-md-3">
-                            <h5>Função</h5>
-                          </div>
-                          <div class="col-md-9 text-secondary">
-                            Auxiliar de Pedreiro
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                          <div class="col-md-3">
-                            <h5>Treinamento Obrigatório</h5>
-                          </div>
-                          <div class="col-md-9 text-secondary">
-                            Aprendizado de produção de cimento
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                          <div class="col-md-3">
-                            <h5>Status Treinamento</h5>
-                          </div>
-                          <div class="col-md-9 text-secondary">
-                            Concluído
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                          <div class="col-md-3">
-                            <h5>Licença do treinamento</h5>
-                          </div>
-                          <div class="col-md-9 text-secondary">
-                            Em dia
-                          </div> 
-                      </div>
-                    </div>
+          <div class="col-md-8 mt-1">
+            <div class="card mb-3 content">
+              <h1 class="m-3 pt-3">Dados do Colaborador</h1>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h5>Matrícula</h5>
+                  </div>
+                  <div class="col-md-9 text-secondary">103029</div>
                 </div>
-                
+                <hr />
+                <div class="row">
+                  <div class="col-md-3">
+                    <h5>Nome</h5>
+                  </div>
+                  <div class="col-md-9 text-secondary">
+                    Abílio Gama Neto Junior
+                  </div>
+                </div>
+                <hr />
+                <div class="row">
+                  <div class="col-md-3">
+                    <h5>Função</h5>
+                  </div>
+                  <div class="col-md-9 text-secondary">
+                    Auxiliar de Pedreiro
+                  </div>
+                </div>
+                <hr />
+                <div class="row">
+                  <div class="col-md-3">
+                    <h5>Treinamento Obrigatório</h5>
+                  </div>
+                  <div class="col-md-9 text-secondary">
+                    Aprendizado de produção de cimento
+                  </div>
+                </div>
+                <hr />
+                <div class="row">
+                  <div class="col-md-3">
+                    <h5>Status Treinamento</h5>
+                  </div>
+                  <div class="col-md-9 text-secondary">Concluído</div>
+                </div>
+                <hr />
+                <div class="row">
+                  <div class="col-md-3">
+                    <h5>Licença do treinamento</h5>
+                  </div>
+                  <div class="col-md-9 text-secondary">Em dia</div>
+                </div>
+              </div>
             </div>
-              <button class="buttonAprovar">Aprovar Colaborador</button>
           </div>
+          <button class="buttonAprovar">Aprovar Colaborador</button>
+        </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
