@@ -1,11 +1,8 @@
 from flask_sqlalchemy import SQLAlchemy # type: ignore
 from flask_login import UserMixin # type: ignore
 from werkzeug.security import generate_password_hash, check_password_hash # type: ignore
-from flask import Flask # type: ignore
 
-app = Flask(__name__)
-app.config.from_object('config.Config')
-db = SQLAlchemy(app)
+db = SQLAlchemy()
 
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
