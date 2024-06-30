@@ -209,7 +209,8 @@ a.sidebar-link:hover {
 }
 
 .buttonAprovar:hover {
-  background-color: #03274e;
+  background-color: #053970;
+
 }
 .mb-3 {
   width: 80%;
@@ -228,11 +229,11 @@ a.sidebar-link:hover {
   border-radius: 6px;
 }
 
-span {
+.span {
   color: #555;
 }
 #icon-elegant {
-  color: #0e2238;
+  color: #0f068b;
   margin-right: 5px;
 }
 @media (max-width: 750px) {
