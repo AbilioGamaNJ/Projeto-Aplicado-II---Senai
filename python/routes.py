@@ -126,11 +126,12 @@ def puxar_excel():
         df = pd.read_excel(file)
         for _, row in df.iterrows():
             colaborador = Aluno(
+                matricula=row['Matricula'],
                 nome=row['Nome'],
-                cpf=row['CPF'],
-                sexo=row['Sexo'],
-                email=row['Email'],
-                data_nascimento=row['Data de Nascimento']
+                funcao=row['Função'],
+                treinamento_obrigatorio=row['Treinamento Obrigatório'],
+                status_treinamento=row['Status do Treinamento'],
+                licenca_treinamento=row['Licença do Treinamento'],
             )
             db.session.add(colaborador)
         db.session.commit()
