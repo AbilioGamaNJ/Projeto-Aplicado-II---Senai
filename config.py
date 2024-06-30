@@ -1,6 +1,4 @@
-import os
-
 class Config:
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'mysql+pymysql://username:password@localhost/sitetreinamentos'
+    SECRET_KEY = 'servidortreinacorporativo2b8a09468f2b76c1e3ab10'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://username:password@localhost:3306/corporative_training'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
